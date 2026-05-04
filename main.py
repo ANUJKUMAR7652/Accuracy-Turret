@@ -3,6 +3,17 @@ import random
 import math
 import os
 import asyncio
+import streamlit as st
+import subprocess
+import os
+
+st.title("🎯 Accuracy Turret Game")
+st.write("Click the button below to start the game window.")
+
+if st.button("Start Game"):
+    # Ye command game ko server par run karegi
+    # Note: Streamlit Cloud par graphics window khulna mushkil hota hai
+    os.system("python main.py")
 
 # --- 1. INITIALIZATION ---
 # Web compatibility ke liye display mode pehle set karna zaroori hai
